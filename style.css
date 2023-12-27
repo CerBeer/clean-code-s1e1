@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.header img {
+.header .img-matrix {
   width: 100%;
 }
 .header .more-inf {
@@ -34,17 +34,17 @@ body {
 .new-task-row {
   display: flex;
 }
-ul {
+.ulist {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+.litem, .h3 {
   list-style:none;
 }
-input,button{
+.checkbox, .input-text, .button{
   outline:none;
 }
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -53,12 +53,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   color: #3a3A3a;
 }
 /* Heading */
-h3,
-label[for="new-task-descr"] {
+.h3,
+.label[for="new-task-descr"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -67,7 +67,7 @@ label[for="new-task-descr"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,21 +79,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task-descr"] {
+.label[for="new-task-descr"] {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task-descr {
+.input#new-task-descr {
   width: 318px;
 }
 
 /* Task list */
-li {
+.litem {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -102,47 +102,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.litem > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.litem > .checkbox {
   margin: 0 10px;
 }
-li > label {
+.litem > .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.litem >    .input-text {
   width: 226px
 }
-button.delete img {
+.button.delete .bdimg {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button.delete .bdimg:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.ulist#completed-tasks .label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.ulist .litem .input-text {
   display:none
 }
 
-ul li.edit-mode input[type=text] {
+.ulist .litem.edit-mode .input-text {
   display:inline-block;
   width:224px
 }
 
-ul li.edit-mode label {
+.ulist .litem.edit-mode .label {
   display:none;
 }
