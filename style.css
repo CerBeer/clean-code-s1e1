@@ -2,7 +2,7 @@
 body {
   background-color: #f8f8f8;
   color: #333;
-  font-family: Lato, sans-serif;
+  font-family: lato, sans-serif;
 }
 .aaa {
   width: 500px;
@@ -138,11 +138,11 @@ ul li input[type=text] {
   display:none
 }
 
-ul li.editMode input[type=text] {
+ul li.editmode input[type=text] {
   display:inline-block;
   width:224px
 }
 
-ul li.editMode label {
+ul li.editmode label {
   display:none;
 }
