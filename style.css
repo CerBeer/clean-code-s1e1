@@ -39,7 +39,7 @@
   margin: 0;
   padding: 0px;
 }
-.litem, .h3 {
+.litem {
   list-style: none;
 }
 .checkbox, .input-text, .button{
@@ -58,8 +58,7 @@
   color: #3a3A3a;
 }
 /* Heading */
-.h3,
-.label[for="new-task-descr"] {
+.title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,9 +84,13 @@
 }
 
 /* New Task */
-.label[for="new-task-descr"] {
-  display: block;
-  margin: 0 0 20px;
+.new-task-litem {
+  overflow: hidden;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .input#new-task-descr {
   width: 318px;
