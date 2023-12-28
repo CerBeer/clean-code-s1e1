@@ -42,7 +42,9 @@
 .tasks__litem {
   list-style: none;
 }
-.tasks__checkbox, .tasks__input-text, .tasks__button{
+.tasks__checkbox, 
+.tasks__input-text, 
+.tasks__button{
   outline: none;
 }
 .tasks__button {
@@ -120,7 +122,8 @@
   font-size: 18px;
   width: 226px;
 }
-.tasks__litem > .tasks__input-text {
+.tasks__litem > 
+.tasks__input-text {
   width: 226px;
 }
 .tasks__button_bdimg {
@@ -133,21 +136,28 @@
 }
 
 /* Completed */
-.tasks__ulist#completed-tasks .tasks__label {
+.tasks__ulist#completed-tasks 
+.tasks__label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.tasks__ulist .tasks__litem .tasks__input-text {
+.tasks__ulist 
+.tasks__litem 
+.tasks__input-text {
   display: none;
 }
 
-.tasks__ulist .tasks__litem.edit-mode .tasks__input-text {
+.tasks__ulist 
+.tasks__litem.edit-mode 
+.tasks__input-text {
   display: inline-block;
   width: 224px;
 }
 
-.tasks__ulist .tasks__litem.edit-mode .tasks__label {
+.tasks__ulist 
+.tasks__litem.edit-mode 
+.tasks__label {
   display: none;
 }
